@@ -2,7 +2,7 @@ namespace Model
 {
     public static class Globals
     {
-        private static int SecInHour;
+        private const int SecInHour = 3600;
         private static int clientPerHour;
         private static double _clientFlowRate;
         public static double clientFlowRate
