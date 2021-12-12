@@ -34,7 +34,7 @@ namespace Model
             get { return _ClientTailCount; }
             set { _ClientTailCount = value; }
         }
-        public static int EventExpectation {
+        public static double EventExpectation {
             get { return dT * clientFlowRate; }
         }
     }
