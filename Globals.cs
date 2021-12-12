@@ -7,6 +7,8 @@ namespace Model
         private static ushort _dT;
         private static double _clientFlowRate;
         private static float _serveFlowRate;
+        private static int _ClientTailCount;
+        private static int _ratio;
         public static double clientFlowRate
         {
             get { return _clientFlowRate; }
@@ -20,13 +22,16 @@ namespace Model
             get { return _dT; }
             set { _dT = value; }
         }
-        private static int _ratio;
         public static int ratio {
             get { return _ratio; }
             set { _ratio = dT / SecInHour; }
         }
         public static float ClientPerHour {
             get { return serveFlowRate * SecInHour; }
+        }
+        public static int ClientTailCount {
+            get { return _ClientTailCount; }
+            set { _ClientTailCount = value; }
         }
     }
 }
