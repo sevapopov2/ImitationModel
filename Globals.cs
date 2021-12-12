@@ -9,6 +9,7 @@ namespace Model
         private static float _serveFlowRate;
         private static int _ClientTailCount;
         private static int _ratio;
+        private static int _EventExpectation;
         public static double clientFlowRate
         {
             get { return _clientFlowRate; }
@@ -32,6 +33,9 @@ namespace Model
         public static int ClientTailCount {
             get { return _ClientTailCount; }
             set { _ClientTailCount = value; }
+        }
+        public static int EventExpectation {
+            get { return dT * clientFlowRate; }
         }
     }
 }
